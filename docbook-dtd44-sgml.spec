@@ -1,7 +1,7 @@
 %define ver	4.4
 %define sver	44
-Summary:	DocBook - DTD for technical documentation
-Summary(pl.UTF-8):	DocBook - DTD przeznaczone do pisania dokumentacji technicznej
+Summary:	DocBook 4.4 SGML - DTD for technical documentation
+Summary(pl.UTF-8):	DocBook 4.4 SGML - DTD przeznaczone do pisania dokumentacji technicznej
 Name:		docbook-dtd%{sver}-sgml
 Version:	1.0
 Release:	2
@@ -21,13 +21,13 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-DocBook - DTD for technical documentation.
+DocBook 4.4 SGML - DTD for technical documentation.
 
 %description -l pl.UTF-8
 DocBook DTD jest zestawem definicji dokumentów przeznaczonych do
 tworzenia dokumentacji programistycznej. Stosowany jest do pisania
 podręczników systemowych, instrukcji technicznych jak i wielu innych
-ciekawych rzeczy.
+ciekawych rzeczy. Ten pakiet zawiera wersję DocBook 4.4 SGML.
 
 %prep
 %setup -q -c
@@ -58,4 +58,4 @@ fi
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%{_datadir}/sgml/docbook/sgml-dtd-%{ver}
+%{_datadir}/sgml/docbook/sgml-dtd-4.4
